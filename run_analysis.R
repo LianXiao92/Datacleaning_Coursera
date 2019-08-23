@@ -36,7 +36,6 @@ for(i in 1:nrow(dataset))  { activity_name[i] <- paste("subject", dataset[i,1], 
 cleanset <- cbind(activity_name, dataset[3:ncol(dataset)])
 
 #Creates a tidy data set with the average of each variable for each activity and each subject
-f <- factor(cleanset$activity_name)
 meantable <- data.frame(matrix(nrow = 180, ncol = ncol(cleanset)-1))
 names(meantable) <- names(cleanset)[2:ncol(cleanset)]
 
