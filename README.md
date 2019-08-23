@@ -8,7 +8,7 @@ By running the code, the output meantable.txt file of average of each variable f
 
 Code book for main variables:
 
-dataset_all: The raw data set by combining test, training as well as their respective subject (1~30) and activity index (1~6);
+dataset_all: The raw data set by combining test, training as well as their respective subject and activity index;
 dataset: Capture only the mean and standard deviation measurements from dataset_all;
 activity_name: Transforming subject and activity index into descriptive name (e.g., "subject 1 WALKING", "subject 10 SITTING", etc.);
 cleanset: Replacing subject and activity index columns with activity_name in dataset;
